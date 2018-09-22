@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>navbar example</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<style>
+.inputstl { 
+    padding: 9px; 
+    border: solid 1px #4B718B; 
+    outline: 0; 
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #CDDBE4), to(#FFFFFF)); 
+    background: -moz-linear-gradient(top, #FFFFFF, #CDDBE4 1px, #FFFFFF 25px); 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    } 
+    
+.menucls {
+  background-color: #69899f;
+  border-color: #425766;
+}
+.menucls .navbar-brand {
+  color: #d7e2e9;
+}
+.menucls .navbar-brand:hover, .menucls .navbar-brand:focus {
+  color: #e5dbdb;
+}
+.menucls .navbar-text {
+  color: #d7e2e9;
+}
+.menucls .navbar-nav > li > a {
+  color: white;
+  font-weight: bold
+}
+.menucls .navbar-nav > li > a:hover, .menucls .navbar-nav > li > a:focus {
+  color: white;
+}
+.menucls .navbar-nav > li > .dropdown-menu {
+  background-color: #69899f;
+}
+.menucls .navbar-nav > li > .dropdown-menu > li > a {
+  color: #d7e2e9;
+}
+.menucls .navbar-nav > li > .dropdown-menu > li > a:hover,
+.menucls .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.menucls .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #69899f;
+}
+.menucls .navbar-nav > .active > a, .menucls .navbar-nav > .active > a:hover, .menucls .navbar-nav > .active > a:focus {
+  color: #e5dbdb;
+  background-color: rex;
+}
+.menucls .navbar-nav > .open > a, .menucls .navbar-nav > .open > a:hover, .menucls .navbar-nav > .open > a:focus {
+  color: #e5dbdb;
+  background-color: #425766;
+}
+.menucls .navbar-toggle {
+  border-color: #425766;
+}
+.menucls .navbar-toggle:hover, .menucls .navbar-toggle:focus {
+  background-color: #425766;
+}
+.menucls .navbar-toggle .icon-bar {
+  background-color: #d7e2e9;
+}
+.menucls .navbar-collapse,
+.menucls .navbar-form {
+  border-color: #d7e2e9;
+}
+.menucls .navbar-link {
+  color: #d7e2e9;
+}
+.menucls .navbar-link:hover {
+  color: #e5dbdb;
+}
+
+@media (max-width: 767px) {
+  .menucls .navbar-nav .open .dropdown-menu > li > a {
+    color: #d7e2e9;
+  }
+  .menucls .navbar-nav .open .dropdown-menu > li > a:hover, .menucls .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #e5dbdb;
+  }
+  .menucls .navbar-nav .open .dropdown-menu > .active > a, .menucls .navbar-nav .open .dropdown-menu > .active > a:hover, .menucls .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #e5dbdb;
+    background-color: #425766;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+<nav class="navbar menucls">
+    <div class="container-fluid" style="background-color: #93b874">
+    <!�For better mobile display-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Web</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="
+         background-color: #93b874;
+         ">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="https://www.jquery-az.com/php-tutorials/">PHP</a></li>
+        <li><a href="https://www.jquery-az.com/jquery-tips/">jQuery</a></li>
+        <li class="dropdown">
+          <a href="https://www.jquery-az.com/bootstrap-tips-tutorials/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bootstrap <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://www.jquery-az.com/bootstrap-carousel-5-single-multiple-horizontal-and-vertical-sliding-demos/">Carousel</a></li>
+            <li><a href="https://www.jquery-az.com/bootstrap-form-customized-styles-6-online-examples/">Forms</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://www.jquery-az.com/bootstrap-select-5-beautiful-styles/">Select</a></li>
+          </ul>
+        </li>
+      </ul>
+
+
+
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="email" class="form-control inputstl" id="Email2" placeholder="Email here">
+        </div>
+          <button type="submit" class="btn btn-info" style="
+                  background-image: linear-gradient(to top right,red,white);
+                  border: #fe9494 1px solid;
+                  width: 100px;
+                  font-weight: bold
+                  ">Subscribe</button>
+      </form>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+</body>
+</html>
+
